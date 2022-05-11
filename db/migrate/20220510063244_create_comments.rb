@@ -1,6 +1,6 @@
-class CreateComents < ActiveRecord::Migration[6.0]
+class CreateComments < ActiveRecord::Migration[6.0]
   def change
-    create_table :coments do |t|
+    create_table :comments do |t|
       t.text       :content,             null: false
       t.references :user,                null: false, foreign_key: true
       t.references :prototype,           null: false, foreign_key: true
